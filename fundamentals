@@ -1,0 +1,48 @@
+ fundamental points to remember-
+(part1)
+
+1. What is the output of the following code if the input is : 5 10 ?
+Scanner s = new Scanner(System.in);
+int a = s.nextInt();
+int b = s.nextInt();
+System.out.println(a+b);
+
+ANSWER- Error
+"s.nextInt()" scans and returns the next token as int. A token is part of entered line that is separated from other tokens by space, tab or newline.
+So when input line is : “5 10”, then s.nextInt() returns the first token i.e. “5” as int and s.nextInt() again returns the next token i.e. “10” as int
+
+2.What is the output of the following code if the input string is "Coding Ninjas"?
+Scanner s = new Scanner(System.in);
+String str;
+str = s.next();
+System.out.print(str);
+
+ANSWER- Coding
+s.next() returns the next token as String. A token is part of entered line that is separated from other tokens by space, tab or newline.
+So when input line is - “Coding Ninjas” then s.next() returns the first token i.e. Coding
+
+3.What is the output of the following code if input is :
+10 abc def
+
+Scanner s = new Scanner(System.in);
+int a = s.nextInt();
+String str = s.next();
+System.out.print(a);
+System.out.println(str);
+
+ANSWER- 10abc
+s.nextInt() scans and returns the next token as int. A token is part of entered line that is separated from other tokens by space, tab or newline. 
+So when input line is - “10 abc def” then s.nextInt() returns the first token as int i.e. “10” and s.next() returns the next token "abc”. 
+While printing, in first statement a is printed and then str. There is no space or nextline between both print. Hence output is : 10abc.
+
+4.What is the output of the following code if input is : abc def 10
+Scanner s = new Scanner(System.in);
+String str = s.next();
+int a = s.nextInt();
+System.out.print(str + " " + a);
+
+ANSWER-  InputMismatchException
+
+s.next()" scans and returns the next token as String. A token is part of entered line that is separated from other tokens by space, tab or newline.
+So when input line is - “abc def 10” then s.next() returns the first token as String i.e. “abc” 
+and s.nextInt() tries to convert the next token i.e. “def” into an int, which gives InputMismatchException.
