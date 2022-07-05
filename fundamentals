@@ -100,5 +100,14 @@ public class  Solution {
 }
 
 It is a relational operator. So it will give the result as true or false only. var1 is not greater than var2, hence result is false.
-14.
+
+14.Which option can be used to check out of two numbers one is positive and the other is negative (Numbers be a and b).
+
+Assuming condition 1 or C1 as a>0 and condition 2 or C2 as b<0, then the expression (a>0 && b<0) has following possibilities:
+C1 is true and C2 is true, the equivalent is true, which is correct as positive a and negative b will mean only one of them is negative.
+C1 is true and C2 is false, the equivalent is false, which is correct.
+C1 is false and C2 is true, the equivalent is false, which is correct .
+C1 is false and C2 is false, the equivalent is true. This is incorrect, as negative a and positive b will mean that only one of them is negative.
+
+Since, the last conclusion is incorrect, hence, this expression cannot be the answer.
  
