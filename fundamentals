@@ -110,4 +110,49 @@ C1 is false and C2 is true, the equivalent is false, which is correct .
 C1 is false and C2 is false, the equivalent is true. This is incorrect, as negative a and positive b will mean that only one of them is negative.
 
 Since, the last conclusion is incorrect, hence, this expression cannot be the answer.
+
+15. Find the output of the following code:
+public static void main (String[] args) {
+    int a=50;
+    int b=Integer.MIN_VALUE;
+    if(a/0==b)
+    {
+
+        System.out.println("Hello");
+    }
+    else
+    {
+        System.out.println("Hi");
+    }
+}
+
+The syntax of the code is correct but on execution dividing a number by zero gives a run time error.
+
+16. Find the output of the code :
+    public static void main (String[] args) {
+    int a=50,b=20;
+    if(a>b)
+    {
+        if(a>100)
+            System.out.println("Ace");
+        if(b<100)
+            b=50;
+    }
+    else if(a==b)
+    {
+        System.out.println("King");
+    }
+    else 
+    {
+        System.out.println("Queen");
+    }
+}
+
+(a>b) is true,So we go inside the if.
+(a>100) is false.
+(b<100) is true,so it is executed and b is updated to 50.
+
+But no print statement is executed hence no output.
+
+
  
