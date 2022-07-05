@@ -154,5 +154,33 @@ The syntax of the code is correct but on execution dividing a number by zero giv
 
 But no print statement is executed hence no output.
 
+17. The number of Hello printed on the screen for the following code will be:
+public static void main (String[] args) {
+    int x=5;
+    int y=5;
+    while((x=5)==y)
+    {
+        System.out.println("Hello");
+        x++;
+        y++;
+    }
+}
+
+The loop is executed only once when y=5.
+
+The condition is false when y=6.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  
