@@ -170,6 +170,58 @@ The loop is executed only once when y=5.
 
 The condition is false when y=6.
 
+18. Find the output for the following code:
+int i=10;
+    while((i=i-1)>0)
+    {
+        System.out.print(i);
+        if(i%5==0)
+            return;
+    }
+    
+ The code executes for i=9,8,7,6,5 and prints 98765.
+At i=5 the if statement is executed and the code terminates.
+
+19.Can this code be used to check primality of a positive integer:
+public static void main (String[] args) {
+    Scanner s=new Scanner (System.in);
+    int n=s.nextInt();
+    boolean isprime=true;
+    if(n%2==0)
+        isprime=false;
+    int i=3;
+    while(isprime&&i<n)
+    {
+        isprime=!(n%i==0);
+        i+=2;
+    }
+    if(isprime)
+    {
+        System.out.println("Prime");
+    }
+    else
+    {
+        System.out.println("Composite");
+    }
+
+}
+
+The code fails for n=2. Otherwise the code runs fine for every other positive integer. 
+
+20.Will following code generate error ?
+public class Main {
+    public static void main(String[] args) {
+        int a = 10;
+        if(a > 5) {
+            int b = 10;
+        }
+        System.out.println(b);
+    }
+}
+
+
+
+
 
 
 
