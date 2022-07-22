@@ -35,11 +35,14 @@ public class Java1 {
 		
 		Student student1 = new Student();
 		// all the lhs side is compile time and right hand side is runtime (dynamic memory allocation )
+		student1.rno=12;
+		student1.marks=40.5f;
+		student1.name="Shanaya";
 		
-		
-		
-		
+		System.out.println(student1.rno);//0, primitive data type 
+		System.out.println(student1);//OUTPUT- com.java.oops.Java1$1Student@626b2d4a(random value)
+		System.out.println(student1.name);//null, objects have null
+		System.out.println(student1.marks);//0.0
 		
 }
 	}
-
